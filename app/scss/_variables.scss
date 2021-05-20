@@ -1,0 +1,22 @@
+:root {
+  --background-el: hsl(0, 0%, 100%);
+  --background: hsl(0, 0%, 98%);
+  --text: hsl(200, 15%, 8%);
+  --search-icon: hsla(0, 0%, 50%, 0.808);
+  
+  --white: hsl(0, 0%, 100%);
+
+  --font-home: 0.875rem;
+  --font-details: 1rem;
+
+  --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+  --border-radius: 4px;
+  --max-width: 90em;
+}
+
+.dark {
+  --background-el: hsl(209, 23%, 22%);
+  --background: hsl(207, 26%, 17%);
+  --text: hsl(0, 0%, 100%);
+  --search-icon: hsl(0, 0%, 100%);
+}

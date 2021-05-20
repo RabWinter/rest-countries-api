@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script
+   src="https://kit.fontawesome.com/6c964c4d8c.js"
+   crossorigin="anonymous"
+  ></script>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+   href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap"
+   rel="stylesheet"
+  />
+  <script type="module" src="/app/js/app.js"></script>
+  <link rel="stylesheet" href="/css/main.css" />
+  <title>Where in the World</title>
+ </head>
+ <body class="dark">
+  <header class="header">
+   <div class="container">
+    <h2 class="header__title">Where in the world?</h2>
+    <button class="btn-toggle btn">
+     <i class="far fa-moon"></i>
+     <i class="fas fa-moon"></i>
+     <p>Dark Mode</p>
+    </button>
+   </div>
+  </header>
+
+  <section class="countries" id="countries">
+   <div class="container">
+    <div class="countries__search">
+     <button class="btn">
+      <i class="fas fa-search"></i>
+     </button>
+     <input
+      type="text"
+      name="search"
+      id="search"
+      placeholder="Search for a country..."
+     />
+    </div>
+
+    <div class="countries__dropdown">
+     <span>Filter by Region</span><i class="fas fa-chevron-down"></i>
+
+     <ul class="countries__dropdown--list">
+      <li class="countries__dropdown--item">All</li>
+      <li class="countries__dropdown--item">Africa</li>
+      <li class="countries__dropdown--item">America</li>
+      <li class="countries__dropdown--item">Asia</li>
+      <li class="countries__dropdown--item">Europe</li>
+      <li class="countries__dropdown--item">Oceania</li>
+     </ul>
+    </div>
+
+    <div class="cards" id="cards-container">
+     <h2>Countries loading...</h2>
+    </div>
+   </div>
+  </section>
+
+  <div class="modal">
+   <button class="btn-back btn" id="btn-back">
+    <i class="fas fa-arrow-left"></i>Back
+   </button>
+   <div class="modal__card"></div>
+  </div>
+ </body>
+</html>
