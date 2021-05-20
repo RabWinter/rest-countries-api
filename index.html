@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="/css/main.css" />
   <title>Where in the World</title>
  </head>
+
  <body class="dark">
   <header class="header">
    <div class="container">
@@ -25,28 +26,31 @@
     <button class="btn-toggle btn">
      <i class="far fa-moon"></i>
      <i class="fas fa-moon"></i>
-     <p>Dark Mode</p>
+     Dark Mode
     </button>
    </div>
   </header>
 
+  <!-- Main countries -->
   <section class="countries" id="countries">
    <div class="container">
     <div class="countries__search">
-     <button class="btn">
-      <i class="fas fa-search"></i>
-     </button>
-     <input
-      type="text"
-      name="search"
-      id="search"
-      placeholder="Search for a country..."
-     />
+     <label for="search">
+      <button class="btn">
+       <i class="fas fa-search"></i>
+      </button>
+      <input
+       type="text"
+       name="search"
+       id="search"
+       placeholder="Search for a country..."
+      />
+     </label>
     </div>
 
+    <!-- Dropdown menu -->
     <div class="countries__dropdown">
      <span>Filter by Region</span><i class="fas fa-chevron-down"></i>
-
      <ul class="countries__dropdown--list">
       <li class="countries__dropdown--item">All</li>
       <li class="countries__dropdown--item">Africa</li>
@@ -63,6 +67,7 @@
    </div>
   </section>
 
+  <!-- Modal window -->
   <div class="modal">
    <button class="btn-back btn" id="btn-back">
     <i class="fas fa-arrow-left"></i>Back
